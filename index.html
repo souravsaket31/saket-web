@@ -35,7 +35,18 @@
                 </div>
             </nav>
         </header>
+        <div class="dark-mode-toggle">
+            <input type="checkbox" id="darkModeSwitch">
+            <label for="darkModeSwitch">Dark Mode</label>
+        </div>
 
+        <script>
+            const darkModeSwitch = document.getElementById('darkModeSwitch');
+            darkModeSwitch.addEventListener('change', () => {
+                document.body.classList.toggle('dark-mode', darkModeSwitch.checked);
+            });
+        </script>
+        
         <main class="l-main">
             <!--===== HOME =====-->
             <section class="home" id="home">
