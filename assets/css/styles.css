@@ -13,6 +13,16 @@
     --white-color: #FAFAFF;
     --dark-color: #2A3B47;
     --text-color: #697477;
+
+        /* Light mode colors */
+        --light-bg: #ffffff;
+        --light-text: #2a3b47;
+        --light-primary: #7be0e0;
+    
+        /* Dark mode colors */
+        --dark-bg: #2a3b47;
+        --dark-text: #FAFAFF;
+        --dark-primary: #7be0e0;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -53,6 +63,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    background-color: var(--light-bg);
+    color: var(--light-text);
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -373,6 +385,13 @@ img{
 }
 .footer__social:hover{
     color: var(--first-color);
+}
+
+.dark-mode {
+    --first-color: var(--dark-primary);
+    --white-color: var(--dark-text);
+    --dark-color: var(--dark-bg);
+    --text-color: var(--dark-text);
 }
 
 /* ===== MEDIA QUERIES =====*/
