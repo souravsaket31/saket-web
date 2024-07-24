@@ -5,22 +5,8 @@
 :root{
     --header-height: 3rem;
     --font-medium: 500;
-    /* change begin*/
-    --bg-planet-bright: #F2C94C;
-    --bg-planet-shadow: #828894;
-    --bg-planet-lightshadow: #D7D7D820;
-    --dot-size: 0.25rem;
-    /* change end */
 }
- /* change begin */
-* {
-    box-sizing: inherit;
-    &:before,
-    &:after {
-        box-sizing: inherit;
-    }
-}
- /* change end */
+
 
 /*===== Colores =====*/
 :root{
@@ -86,9 +72,6 @@ body{
     font-weight: var(--font-medium);
     color: var(--text-color);
     line-height: 1.6;
-    /* change begin */
-    transition: background-color 400ms ease;
-    /* change end */
 }
 h1,h2,p{
     margin: 0;
