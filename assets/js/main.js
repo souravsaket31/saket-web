@@ -11,6 +11,14 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('dark-mode-toggle').addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+        console.log('Dark mode toggled');
+    });
+});
+
+
 /*===== REMOVE MENU MOBILE =====*/
 const navLink = document.querySelectorAll('.nav__link')
 
